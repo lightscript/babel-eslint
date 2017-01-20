@@ -39,7 +39,7 @@
   "homepage": "https://github.com/babel/babel-eslint",
   "devDependencies": {
     "babel-eslint": "^7.0.0",
-    "eslint": "^3.9.1",
+    "eslint": "^3.14.0",
     "eslint-config-babel": "^6.0.0",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-flowtype": "^2.4.0",
