@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: "babel",
+  parser: "lightscript-eslint",
   parserOptions: {
     ecmaVersion: 7,
     sourceType: "module"
