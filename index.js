@@ -410,7 +410,10 @@ exports.parseNoPatch = function (code, options) {
       ast = jsParse(code, opts);
     }
   } catch (err) {
-    if (err instanceof SyntaxError) {
+    // Any error with location information should be promoted to a code frame.
+    // Otherwise linter plugins for IDEs lose the positional information for
+    // semantic errors.
+    if (err.loc) {
       err.lineNumber = err.loc.line;
       err.column = err.loc.column + 1;
 
